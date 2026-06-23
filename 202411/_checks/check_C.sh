@@ -12,8 +12,8 @@ echo
 
 # --- Comandos usados:
 echo
-echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_${PUNTO}.sh"
+echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_C${PUNTO}.sh"
 echo
-cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_${PUNTO}.sh
+cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_C${PUNTO}.sh
 echo "-------------------------------------------------------------"
 echo
