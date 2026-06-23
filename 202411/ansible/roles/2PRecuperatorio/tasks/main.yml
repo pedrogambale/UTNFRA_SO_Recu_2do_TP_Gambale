@@ -1,0 +1,15 @@
+- name: Crear carpeta de trabajo
+  file:
+    path: /tmp/practica_so
+    state: directory
+    owner: pedropgambale
+    group: pedropgambale
+    mode: '0755'
+
+- name: Configurar sudoers para el usuario
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^pedropgambale'
+    line: 'pedropgambale ALL=(ALL) NOPASSWD: ALL'
+    validate: '/usr/sbin/visudo -cf %s'

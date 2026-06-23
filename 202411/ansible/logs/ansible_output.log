@@ -1,0 +1,13 @@
+2026-06-23 22:49:37,761 p=5535 u=pedropgambale n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2026-06-23 22:49:37,933 p=5535 u=pedropgambale n=ansible | PLAY [all] **************************************************************************************************************************
+2026-06-23 22:49:37,944 p=5535 u=pedropgambale n=ansible | TASK [Gathering Facts] **************************************************************************************************************
+2026-06-23 22:49:38,088 p=5535 u=pedropgambale n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\npedropgambale@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2026-06-23 22:49:39,331 p=5535 u=pedropgambale n=ansible | ok: [localhost]
+2026-06-23 22:49:39,347 p=5535 u=pedropgambale n=ansible | TASK [2PRecuperatorio : Crear carpeta de trabajo] ***********************************************************************************
+2026-06-23 22:49:39,661 p=5535 u=pedropgambale n=ansible | changed: [localhost]
+2026-06-23 22:49:39,670 p=5535 u=pedropgambale n=ansible | TASK [2PRecuperatorio : Configurar sudoers para el usuario] *************************************************************************
+2026-06-23 22:49:39,986 p=5535 u=pedropgambale n=ansible | changed: [localhost]
+2026-06-23 22:49:40,002 p=5535 u=pedropgambale n=ansible | PLAY RECAP **************************************************************************************************************************
+2026-06-23 22:49:40,002 p=5535 u=pedropgambale n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-23 22:49:40,002 p=5535 u=pedropgambale n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
